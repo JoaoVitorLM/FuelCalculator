@@ -27,7 +27,7 @@ export default function Home() {
                             <BoxResults>
                                 <Box><H3>Km: {distancia}</H3></Box>   
                                 <Box><H3>Consumo: {Number(distancia / litros).toFixed(2)}km/l</H3></Box>
-                                <Box><H3>Valor gasto: R${Number(distancia / litros * combustivel).toFixed(2)}</H3></Box>
+                                <Box><H3>Valor gasto: R${Number(litros * combustivel).toFixed(2)}</H3></Box>
                             </BoxResults>  
                             <BoxChart>
                                 <Chart/>                               
